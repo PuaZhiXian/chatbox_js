@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>ChatBox</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen flex-col flex bg-sky-100">
+<!-- Header -->
+<div class="flex items-center justify-center py-4 bg-gradient-to-t from-slate-200 to-slate-50">
+    <div>
+        <img class="h-[16px] w-auto cursor-pointer" src="assets/logo.png"/>
+    </div>
+    <div class="font-bold text-base ml-2">Logo Here</div>
+</div>
+
+<!-- Content -->
+<div class="grow container mx-auto py-5">
+    <div class="flex flex-col">
+        <div class="font-bold text-xl">ChatBox</div>
+        <div class="my-3 bg-white">
+            <!-- Name -->
+            <div class="bg-sky-600 flex items-center py-2 px-4">
+                <div class=""><img class="h-[50px] w-auto cursor-pointer" src="assets/profile.png"/></div>
+                <div class="text-white font-bold text-lg ml-4">Jamie</div>
+            </div>
+            <!-- Textbox -->
+            <div id="textbox" class="grow px-8 py-2 h-full overflow-y-auto min-h-[180px] max-h-[180px]">
+                <div class="chat"></div>
+                <div id="bottom" class="p-1"></div>
+            </div>
+            <!-- Input -->
+            <hr>
+            <div class="px-8 py-2">
+                <textarea id="textarea" class="w-full" placeholder="Type a message..." class="p-0" rows="2"></textarea>
+                <div class="flex justify-end">
+                    <button class="bg-sky-600 text-white py-2 px-8 flex items-center justify-center gap-2 rounded-lg cursor-pointer"
+                            id="submit">
+                        <div><img class="h-[16px] w-auto cursor-pointer" src="assets/send.png"/></div>
+                        <div class="font-bold">Send</div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<div class="py-4 text-gray-400 text-sm bg-sky-900 flex items-center justify-center">
+    © 2023 Copyrights. All rights reserved.
+</div>
+</body>
+</html>
